@@ -8,7 +8,7 @@ using Utils.EntityFramework;
 
 namespace Test
 {
-    class Program
+    class EntityFrameWorkTest
     {
         static void Main(string[] args)
         {
