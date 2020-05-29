@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Test.RedisTest</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -138,6 +141,7 @@
   <ItemGroup>
     <Compile Include="EntityFrameWorkTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedisTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -147,6 +151,10 @@
     <ProjectReference Include="..\Utils.EntityFramework\Utils.EntityFramework.csproj">
       <Project>{E70D56F3-57F5-4C7A-9061-8194899605CB}</Project>
       <Name>Utils.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils.Redis\Utils.Redis.csproj">
+      <Project>{088F5C83-29C7-45BE-B7FE-5D2883D39392}</Project>
+      <Name>Utils.Redis</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
