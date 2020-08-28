@@ -11,6 +11,7 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            //dev添加注释
             ILog log = LogManager.GetLogger(typeof(Log4NetTest));
             log.Info("info");
             log.Error("Error");
