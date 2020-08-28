@@ -12,6 +12,7 @@ namespace Test
         static void Main(string[] args)
         {
             //master再次添加
+            //sourceTree
             //master添加注释
             //dev添加注释
             ILog log = LogManager.GetLogger(typeof(Log4NetTest));
